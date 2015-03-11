@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Which Social Media App Are You?</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<style>
+
+.bb td, .bb th {
+     border-bottom: 1px solid black !important;
+    }
+#answer {
+display: none;
+}
+
+#answer2 {
+font-size: 40px;
+}
+
+#Pinterest {
+display: none;
+}
+
+#Twitter {
+display: none;
+}
+
+#Facebook {
+display: none;
+}
+
+#Instagram {
+display: none;
+}
+
+#LinkedIn {
+display: none;
+}
+
+body {
+background-image: url("Social.jpg");
+}
+
+#main {
+width: 60%;
+border: 4px black solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+padding: 5px;
+height: 25px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+<div id="main">
+<div>
+<img src="header.jpg" width="100%">
+</div>
+<div id="header"><h1 align="center">Which Social Media App Are You?</h1></div><br> <br> 
+
+ <br> <br> 
+<table align="center" width="100%">
+<form  id="form1" action=" "/>
+
+<tr class="bb">
+<td><p>How old are you?</p></td>
+<td><input type="radio" name = "age" id="teen" value="1" />under 18</td>
+<td><input type="radio" name = "age" id="young" value="2" />19-29</td>
+<td><input type="radio" name = "age" id="mid" value="3" />30-39</td>
+<td><input type="radio" name = "age" id="old" value="4" />40 and over</td>
+</tr>
+
+<tr class="bb">
+<td><p>Who do you communicate with more?</p></td>
+<td><input type="radio" name = "comm" id="friends" value="6" />Friends</td>
+<td><input type="radio" name = "comm" id="family" value="4" />Family </td>
+<td><input type="radio" name = "comm" id="strangers" value="2" />Strangers</td>
+<td><input type="radio" name = "comm" id="coworkers" value="2" />Co-Workers</td>
+</tr>
+
+<tr class="bb">
+<td><p>What kind of pet do you have?</p></td>
+<td><input type="radio" name = "pet" id="dog" value="6" /><img src="dog.jpg"</td>
+<td><input type="radio" name = "pet" id="cat" value="4" /><img src="cat.jpg"</td>
+<td><input type="radio" name = "pet" id="other" value="2" /><img src="other.jpg"</td>
+<td><input type="radio" name = "pet" id="none1" value="1" /><img src="none.jpg"</td>
+</tr>
+
+<tr>
+<td><p>Pick a pop princess:</p></td>
+<td><input type="radio" name = "pop" id="KP" value="8" /><img src="KP.jpg"></td>
+<td><input type="radio" name = "pop" id="LG" value="7" /><img src="LG.jpg"></td>
+<td><input type="radio" name = "pop" id="BS" value="4" /><img src="BS.jpg"></td>
+<td><input type="radio" name = "pop" id="MA" value="2" /><img src="MA.jpg"></td>
+</tr>
+
+<tr class="bb">
+<td><p></p></td>
+<td><input type="radio" name = "pop" id="KC" value="6" /><img src="KC.jpg"></td>
+<td><input type="radio" name = "pop" id="AG" value="5" /><img src="AG.jpg"></td>
+<td><input type="radio" name = "pop" id="NM" value="3" /><img src="NM.jpg"></td>
+<td><input type="radio" name = "pop" id="TI" value="1" /><img src="TI.jpg"></td>
+</tr>
+
+<tr class="bb">
+<td><p>Which color do you prefer?</p></td>
+<td><input type="radio" name = "color" id="red" value="2" /><img src="red.jpg"></td>
+<td><input type="radio" name = "color" id="yellow" value="1" /><img src="yellow.jpg"></td>
+<td><input type="radio" name = "color" id="blue" value="2" /><img src="blue.jpg"></td>
+<td><input type="radio" name = "color" id="green" value="1" /><img src="green.jpg"></td>
+</tr>
+
+<tr class="bb">
+<td><p>What browser do you prefer?</p></td>
+<td><input type="radio" name = "internet" id="chrome" value="4" /><img src="chrome.jpg"></td>
+<td><input type="radio" name = "internet" id="firefox" value="3" /><img src="firefox.jpg"></td>
+<td><input type="radio" name = "internet" id="safari" value="2" /><img src="safari.jpg"></td>
+<td><input type="radio" name = "internet" id="netscape" value="1" /><img src="netscape.jpg"></td>
+</tr>
+
+<tr>
+<td><p>Pick a news service:</p></td>
+<td><input type="radio" name = "news" id="CNN" value="5" /><img src="CNN.jpg"></td>
+<td><input type="radio" name = "news" id="NPR" value="4" /><img src="NPR.jpg"></td>
+<td><input type="radio" name = "news" id="MSNBC" value="2" /><img src="MSNBC.jpg"></td>
+<td><input type="radio" name = "news" id="VICE" value="1" /><img src="VICE.jpg"></td>
+</tr>
+
+<tr class="bb">
+<td><p></p></td>
+<td><input type="radio" name = "news" id="FOX" value="3" /><img src="FOX.jpg"></td>
+<td><input type="radio" name = "news" id="YAHOO" value="4" /><img src="YAHOO.jpg"></td>
+<td><input type="radio" name = "news" id="HUFF" value="2" /><img src="HUFF.jpg"></td>
+<td><input type="radio" name = "news" id="WSJ" value="6" /><img src="WSJ.jpg"></td>
+</tr>
+
+<tr class="bb">
+<td><p>Pick a beer:</p></td>
+<td><input type="radio" name = "beer" id="corona" value="1" /><img src="corona.jpg"></td>
+<td><input type="radio" name = "beer" id="bud" value="3" /><img src="bud.jpg"></td>
+<td><input type="radio" name = "beer" id="dos" value="2" /><img src="dos.jpg"></td>
+<td><input type="radio" name = "beer" id="hein" value="4" /><img src="hein.jpg"></td>
+</tr>
+
+
+<tr><td>
+<br />
+<input type="submit" value="Get Your Results!"> <input type=button value="Refresh" onClick="window.location.reload()">
+</td></tr>
+</form>
+</table>
+
+<p id="answer"></p>
+<p id="answer2"></p>
+<img id="Pinterest" src="Pinterest.jpg" align="center" width="100%">
+<img id="Facebook" src="Facebook.jpg" align="center" width="100%">
+<img id="Twitter" src="Twitter.jpg" align="center" width="100%">
+<img id="LinkedIn" src="LinkedIn.jpeg" align="center" width="100%">
+<img id="Instagram" src="Instagram.jpg" align="center" width="100%">
+<p id="answer3"></p>
+</div>
+<script>
+   agevar = ['teen', 'young', 'mid', 'old'];
+   commvar = ['friends', 'family', 'strangers', 'coworkers'];
+   petvar = ['dog', 'cat', 'other', 'none1'];
+   colorvar = ['red', 'yellow', 'blue', 'green'];
+   internetvar = ['chrome', 'firefox', 'safari', 'netscape'];
+   popvar = ['KP', 'KC', 'LG', 'AG', 'BS', 'NM', 'MA', 'TI'];
+   newsvar = ['CNN', 'NPR', 'MSNBC', 'VICE', 'FOX', 'YAHOO', 'HUFF', 'WSJ'];
+   beervar = ['corona', 'bud', 'dos', 'hein'];
+    
+	   document.getElementById("form1").onsubmit=function() {
+	   for(i=0; i<agevar.length; i++) {
+	   if (document.getElementById(agevar[i]).checked) {
+	   age = document.getElementById(agevar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<commvar.length; i++) {
+	   if (document.getElementById(commvar[i]).checked) {
+	   comm = document.getElementById(commvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<petvar.length; i++) {
+	   if (document.getElementById(petvar[i]).checked) {
+	   pet = document.getElementById(petvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<colorvar.length; i++) {
+	   if (document.getElementById(colorvar[i]).checked) {
+	   color = document.getElementById(colorvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<internetvar.length; i++) {
+	   if (document.getElementById(internetvar[i]).checked) {
+	   internet = document.getElementById(internetvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<popvar.length; i++) {
+	   if (document.getElementById(popvar[i]).checked) {
+	   pop = document.getElementById(popvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<newsvar.length; i++) {
+	   if (document.getElementById(newsvar[i]).checked) {
+	   news = document.getElementById(newsvar[i]).value 
+	   }
+	   }//end for
+	   
+	   for(i=0; i<beervar.length; i++) {
+	   if (document.getElementById(beervar[i]).checked) {
+	   beer = document.getElementById(beervar[i]).value 
+	   }
+	   }//end for
+	   
+	   total = parseInt(age) + parseInt(comm) + parseInt(pet) + parseInt(color) + parseInt(internet) + parseInt(pop) + parseInt(news) + parseInt(beer);
+	   document.getElementById("answer").innerHTML = total;
+	   
+	   if(total < 12) {
+document.getElementById("answer2").innerHTML = "You are Facebook! You are fun and social."
+	document.getElementById("Facebook").style.display = "inline";
+	document.getElementById("answer3").innerHTML = "Users can create a user profile, add other users as friends, exchange messages, post status updates and photos, share videos and receive notifications when others update their profiles. Additionally, users may join common-interest user groups, organized by workplace, school or college, or other characteristics, and categorize their friends into lists such as People From Work or Close Friends. Facebook had over 1.3 billion active users as of June 2014."
+}
+
+   if(total >=13 && total <=16) {
+document.getElementById("answer2").innerHTML = "You are Instagram! You love to show off!"
+	document.getElementById("Instagram").style.display = "inline";
+	document.getElementById("answer3").innerHTML = "Users can upload photographs and short videos, follow other users' feeds and geotag images with longitude and latitude coordinates, or the name of a location. Every year, Instagram released Top 10 Instagram geotagged locations in the world, in pictures. Users can connect their Instagram account to other social networking sites, which will enable the option to share uploaded photos to those sites. As of June 2013, users can connect their accounts to Facebook, Twitter, Tumblr and Flickr."
+}
+	
+	if(total >=17 && total <=22) {
+document.getElementById("answer2").innerHTML = "You are Twitter! You're hip and to the point."
+	document.getElementById("Twitter").style.display = "inline";
+	document.getElementById("answer3").innerHTML = "Twitter is an online social networking service that enables users to send and read short 140-character messages called tweets. Registered users can read and post tweets, but unregistered users can only read them. Users access Twitter through the website interface, SMS, or mobile device app. Twitter Inc. is based in San Francisco and has more than 25 offices around the world."
+	}   
+
+	if(total >=23 && total <=28) {
+document.getElementById("answer2").innerHTML = "You are Pinterest! You are crafty and creative!"
+	document.getElementById("Pinterest").style.display = "inline";
+	document.getElementById("answer3").innerHTML = "Users can upload, save, sort, and manage images (known as pins)and other media content (e.g., videos and images) through collections known as pinboards. Pinterest acts as a personalized media platform. Users can browse the content of others on the main page. Users can then save individual pins to one of their own boards using the Pin It button, with Pinboards typically organized by a central topic or theme. Users can personalize their experience with Pinterest by pinning items, creating boards, and interacting with other members. By doing so, the users pin feed displays unique, personalized results."
+}   
+
+	if(total >=29) {
+document.getElementById("answer2").innerHTML = "You are LinkedIn! You're polished and professional."
+	document.getElementById("LinkedIn").style.display = "inline";
+	document.getElementById("answer3").innerHTML = "The basic functionality of LinkedIn allows users (workers and employers) to create profiles and connections to each other in an online social network which may represent real-world professional relationships. Users can invite anyone (whether a site user or not) to become a connection. The gated-access approach (where contact with any professional requires either an existing relationship, or the intervention of a contact of theirs) is intended to build trust among the service's users. "
+}   
+	   
+	   return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+	
+
+
+
+</script>
+
+
+</body>
+</html>
